@@ -492,3 +492,43 @@ p {
 
   align-items: baseline;
 }
+
+/* Modal window */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 1;
+  background: rgba(46, 47, 66, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+  border-radius: 4px;
+  width: 408px;
+  height: 584px;
+}
+.client-form-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: center;
+  border: none;
+  margin-top: 72px;
+}
+.box-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.box-header {
+  padding-bottom: 8px;
+}
