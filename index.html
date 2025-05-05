@@ -459,6 +459,9 @@
     </main>
     <div class="modal-overlay">
       <div class="modal">
+        <button class="close-btn">
+          <svg><use></use></svg>
+        </button>
         <form action="" name="client-form" autocomplete="on" novalidate>
           <fieldset class="client-form-box">
             <legend class="box-header">
@@ -482,17 +485,21 @@
                 placeholder="Text input"
               ></textarea>
             </label>
-
-            <input
+          </fieldset>
+          <label
+            ><input
+              class="visually-hidden-checkbox"
               type="checkbox"
               name="accepting"
               value="accepting"
-              id="accepting"
-              required
-            /><label for="accepting"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
-          </fieldset>
+            />
+            <div class="checkmark-box">
+              <svg class="checkmark-icon">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </div>
+            I accept the terms and conditions of the Privacy Policy</label
+          >
         </form>
       </div>
     </div>
