@@ -520,30 +520,91 @@ p {
 .client-form-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 8px;
-  justify-content: center;
   border: none;
-  margin-top: 72px;
+  margin: 0;
+  padding: 0;
 }
-
+.label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
 .box-label {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
+.label-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
 .box-header {
   padding-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 .close-btn {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  position: absolute;
-  top: 0;
-  right: 0;
   margin-top: 24px;
-  margin-right: 24px;
+  margin-left: 360px;
+  margin-bottom: 24px;
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.close-button-icon {
+  fill: #2e2f42;
+  width: 8px;
+  height: 8px;
+}
+.input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+.input-icon {
+  position: absolute;
+  width: 18px;
+  height: 24px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  fill: #4d5ae5;
+  pointer-events: none;
+}
+.textarea {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+}
+.checkbox-container {
+  display: flex;
+  gap: 8px;
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
 .visually-hidden-checkbox {
   position: absolute;
   width: 1px;
@@ -576,4 +637,23 @@ p {
 
 .visually-hidden-checkbox:checked + .checkmark-box .checkmark-icon {
   opacity: 1;
+}
+.send-btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
 }
