@@ -772,3 +772,7 @@ input:focus {
   text-align: center;
   color: #fff;
 }
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
