@@ -609,12 +609,7 @@ p {
   flex-direction: column;
   gap: 4px;
 }
-.label-link {
-  line-height: 1.33;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #4d5ae5;
-}
+
 .modal-paragraph {
   margin-bottom: 16px;
   font-weight: 500;
@@ -720,8 +715,8 @@ input:focus {
 
 .visually-hidden {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
@@ -745,7 +740,17 @@ input:focus {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.visually-hidden:checked + .label .checkmark-box {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.label-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
 .send-btn {
   border-radius: 4px;
   padding: 16px 32px;
@@ -764,10 +769,4 @@ input:focus {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-}
-
-.input[type="checkbox"]:checked + span.checkmark-box {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
 }
