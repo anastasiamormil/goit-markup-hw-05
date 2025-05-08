@@ -570,9 +570,6 @@ p {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay .is-open {
-}
-
 .modal {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -645,8 +642,8 @@ p {
   height: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover .close-button-icon,
+.close-btn:focus .close-button-icon {
   fill: #fff;
 }
 .input {
